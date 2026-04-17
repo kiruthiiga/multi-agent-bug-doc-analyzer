@@ -138,10 +138,3 @@ Persistent memory handling
 API development using FastAPI
 Automated bug analysis and documentation generation
 Author
-
-Developed as a mini project for demonstrating a multi-agent backend workflow pipeline with memory, tool-calling, and API exposure.
-
-
-This README will make your project look **well-structured and professional**, which is very helpful for submission.
-
-Next, I can help you create a **good `requirements.txt` + `.gitignore`** so your repo is fully submission-ready.
