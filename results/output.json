@@ -1,0 +1,62 @@
+[
+    {
+        "bugs": [
+            "No major bugs found"
+        ],
+        "docs": [
+            "This code prints output to the console."
+        ]
+    },
+    {
+        "bugs": [
+            "No major bugs found"
+        ],
+        "docs": [
+            "This code prints output to the console."
+        ]
+    },
+    {
+        "bugs": [
+            "No major bugs found"
+        ],
+        "docs": [
+            "This code prints output to the console."
+        ]
+    },
+    {
+        "bugs": [
+            "No major bugs found"
+        ],
+        "docs": [
+            "This code prints output to the console.",
+            "This code performs variable assignment."
+        ]
+    },
+    {
+        "bugs": [
+            "No major bugs found"
+        ],
+        "docs": [
+            "This code prints output to the console.",
+            "This code defines a function.",
+            "This code contains a loop.",
+            "This code performs variable assignment."
+        ]
+    },
+    {
+        "bugs": [
+            "No major bugs found"
+        ],
+        "docs": [
+            "Basic code execution."
+        ]
+    },
+    {
+        "bugs": [
+            "No major bugs found"
+        ],
+        "docs": [
+            "Basic code execution."
+        ]
+    }
+]

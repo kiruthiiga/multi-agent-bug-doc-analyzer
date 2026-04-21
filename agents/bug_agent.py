@@ -6,7 +6,7 @@ def analyze_code(code: str):
     try:
         tree = ast.parse(code)
     except SyntaxError as e:
-        issues.append(f"Syntax Error: {e}")
+        issues.append(f"Syntax Error: {e}") 
         return issues
 
     for node in ast.walk(tree):

@@ -12,8 +12,24 @@ class CodeInput(BaseModel):
 
 @app.post("/analyze")
 def analyze(input_data: CodeInput):
-    bugs = analyze_code(input_data.code)
-    docs = generate_docs(input_data.code)
+    try:
+        bugs = analyze_code(input_data.code)
+        docs = generate_docs(input_data.code)
+
+        result = {
+            "bugs": bugs,
+            "docs": docs
+        }
+
+        save_result(result)   # 👈 add this back
+
+        return result
+
+    except Exception as e:
+        return {"error": str(e)}
+
+    except Exception as e:
+        return {"error": str(e)}
 
     result = {
         "bugs": bugs,
@@ -23,4 +39,3 @@ def analyze(input_data: CodeInput):
     save_result(result)
 
     return result
-

@@ -1,17 +1,24 @@
 import json
 import os
 
-MEMORY_FILE = "memory/history.json"
+def save_result(result: dict):
+    os.makedirs("results", exist_ok=True)
 
-def save_result(result):
-    history = []
+    file_path = "results/output.json"
 
-    if os.path.exists(MEMORY_FILE):
-        with open(MEMORY_FILE, "r") as f:
-            history = json.load(f)
+    # If file exists, read old data safely
+    if os.path.exists(file_path):
+        try:
+            with open(file_path, "r") as f:
+                data = json.load(f)
+        except:
+            data = []   # if file is empty or corrupted
+    else:
+        data = []
 
-    history.append(result)
+    # Append new result
+    data.append(result)
 
-    with open(MEMORY_FILE, "w") as f:
-        json.dump(history, f, indent=4)
-
+    # Write back
+    with open(file_path, "w") as f:
+        json.dump(data, f, indent=4)
